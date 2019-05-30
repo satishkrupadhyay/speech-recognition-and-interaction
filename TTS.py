@@ -2,6 +2,6 @@
 from gtts import gTTS
 
 customer = 'Hafidz'
-amount = 20000
+amount = 40000
 tts = gTTS('hello' + customer + 'have you applied for loan of amount' + str(amount), lang='en')
 tts.save('hello.mp3')
