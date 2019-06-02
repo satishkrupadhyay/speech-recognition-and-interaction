@@ -2,7 +2,6 @@
 from gtts import gTTS
 from playsound import playsound
 import os
-from pydub import AudioSegment
 
 def TTS():    
     cust_name = 'Hafidz'
@@ -14,12 +13,10 @@ def TTS():
     eng_message= "hello I am anastasia from PinBee wants to confirm about your data. please listen carefully. so am I speaking with." + cust_name + "with borrower ID," + brr_id + ", you are living in," + address + "with phone number," + contact_no + "Please confirm your response with yes or no"
     tts = gTTS(eng_message, lang='en', slow=False)
     tts.save('hello.mp3')
-    sound = AudioSegment.from_mp3("hello.mp3")
-    sound.export("myfile.wav", format="wav")
-    #playsound('hello.mp3')
+    playsound('hello.mp3')
     #os.system("hello.mp3")
 
-    TTS()
+TTS()
 
 
 

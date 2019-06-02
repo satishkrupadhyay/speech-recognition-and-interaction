@@ -1,21 +1,25 @@
 import speech_recognition as sr
+def SST():
 
-# r = sr.Recognizer()
-# with sr.Microphone() as source:
-#     print ('Say Something!')
-#     audio = r.listen(source)
-#     print ('Done!')
- 
-# try:
-#     text = r.recognize_google(audio)
-#     print('Google thinks you said:\n' + text)
+    r = sr.Recognizer()
+    with sr.Microphone() as source:
+        print ('Say Something! Listening........')
+        audio = r.listen(source)
+        print ('Recorded.....')
     
-# except Exception as e:
-#     print (e)
-r = sr.Recognizer()
-harvard = sr.AudioFile('harvard.wav')
-with harvard as source:
-    audio = r.record(source)
+    try:
+        text = r.recognize_google(audio)
+        print('You said:\n' + text)
+        
+    except Exception as e:
+        print (e)
 
-text = r.recognize_google(audio)
-print('you said:\n' + text)
+SST()
+    
+# r = sr.Recognizer()
+# harvard = sr.AudioFile('harvard.wav')
+# with harvard as source:
+#     audio = r.record(source)
+
+# text = r.recognize_google(audio)
+# print('you said:\n' + text)
