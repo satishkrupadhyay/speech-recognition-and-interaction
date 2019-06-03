@@ -5,7 +5,7 @@ import os
 
 def TTS():    
     cust_name = 'Hafidz'
-    amount = '20000'
+    #amount = '20000'
     brr_id = '1 2 3 4'
     address = 'India'
     contact_no = '9 8 5 9 8 1 7 4 5 1'
