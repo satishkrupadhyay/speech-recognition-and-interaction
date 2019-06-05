@@ -4,12 +4,16 @@ import time
 import os
 from gtts import gTTS
 from playsound import playsound
+import random
 
 def TTS(text):
     print(text)
+    r1 = random.randint(1,10000000)
+    randfile = "Audio"+ str(r1) +".mp3"
     tts = gTTS(text=text, lang="en")
-    tts.save("audio.mp3")
-    playsound("audio.mp3")
+    tts.save(randfile)
+    playsound(randfile)
+    os.remove(randfile)
 
 def STT():
     # Record Audio
@@ -30,18 +34,23 @@ def STT():
     return data
 
 def COM(data):
-    if "Do you know me" in data:
-        TTS('Yes, You are my boss')
+    if "Who am I" in data:
+        TTS("Yes, You are Satish")
 
-    if "how are you" in data:
-        TTS("I am fine")
+    elif "how are you" in data:
+        TTS("I am fine, Thank you")
+    
+    elif "Can you Dance" in data:
+        TTS("No, its beyond my limit")
 
-    if "what time is it" in data:
+    elif "what time is it" in data:
         TTS(ctime())
+    else:
+        TTS("Sorry, I can't understand you")
     
 
 # initialization
-time.sleep(2)
+time.sleep(1)
 TTS("Hi satish, what can I do for you?")
 while 1:
     data = STT()
