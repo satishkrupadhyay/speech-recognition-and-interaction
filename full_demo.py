@@ -35,7 +35,7 @@ def STT():
 
 def COM(data):
     if "Who am I" in data:
-        TTS("Yes, You are Satish")
+        TTS("You are Satish")
 
     elif "how are you" in data:
         TTS("I am fine, Thank you")
