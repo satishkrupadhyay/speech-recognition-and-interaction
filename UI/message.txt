@@ -1,0 +1,11 @@
+pinbee : hallo saya anastasia dari Pinbee, aplikasi pinjam meminjam.
+user   : iya
+pinbee : sehubungan dengan aplikasi pinjaman anda, saya mau melakukan konfirmasi data-data dari aplikasi anda.
+user   :   oke
+pinbee : apakah benar nama anda adalah hafidz?
+User : betul
+pinbee : apakah benar anda mengajukan pinjaman kepada aplikasi pinbee?
+User : betul
+pinbee : apakah benar anda mengajukan pinjaman darurat dengan jumlah pinjaman sebesar 5000000?
+User : betul
+pinbee : terimakasih atas kepercayaannya terhadap pinbee

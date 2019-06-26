@@ -15,11 +15,3 @@ def SST():
         print (e)
 
 SST()
-    
-# r = sr.Recognizer()
-# harvard = sr.AudioFile('harvard.wav')
-# with harvard as source:
-#     audio = r.record(source)
-
-# text = r.recognize_google(audio)
-# print('you said:\n' + text)
